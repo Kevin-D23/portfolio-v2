@@ -1,6 +1,6 @@
 import styles from "../styles/LandingPage.module.css";
 
-export default function () {
+export default function LandingPage() {
   return (
     <section className={styles.LandingPageContainer}>
       <div className={styles.WelcomeMessageContainer}>

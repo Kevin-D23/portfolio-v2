@@ -1,9 +1,9 @@
-import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import LandingPage from "./components/LandingPage";
 import Navbar from "./components/Navbar";
 import ProjectsPage from "./components/ProjectsPage";
+import AboutPage from "./components/AboutPage";
+import ContactPage from "./components/ContactPage";
 
 function App() {
   return (
@@ -11,6 +11,8 @@ function App() {
       <Navbar />
       <LandingPage />
       <ProjectsPage />
+      <AboutPage />
+      <ContactPage />
     </div>
   );
 }
