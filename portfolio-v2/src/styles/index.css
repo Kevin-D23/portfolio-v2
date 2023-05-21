@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --primary-bg: #27292A;
+  --seconday-bg: #1F1F1F;
+  --primary-text: #FFFCF2;
+  --secondary-text: #CCC5B9;
+  --accent-color: #D73742;
+}
