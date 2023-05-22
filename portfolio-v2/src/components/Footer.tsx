@@ -6,7 +6,7 @@ import mail from "../icons/mail.svg";
 
 export default function Footer() {
   return (
-    <footer>
+    <footer className={styles.FooterContainer}>
       <hr />
       <h1>Connect With Me</h1>
       <div className={styles.SocialIcons}>

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;700&display=swap");
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -5,9 +7,10 @@ body {
 }
 
 :root {
-  --primary-bg: #27292A;
-  --seconday-bg: #1F1F1F;
-  --primary-text: #FFFCF2;
-  --secondary-text: #CCC5B9;
-  --accent-color: #D73742;
+  --primary-bg: #27292a;
+  --secondary-bg: #1f1f1f;
+  --primary-text: #fffcf2;
+  --secondary-text: #ccc5b9;
+  --accent-color: #d73742;
+  font-family: "Roboto Mono", monospace;
 }
