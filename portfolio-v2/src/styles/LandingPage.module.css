@@ -1,6 +1,6 @@
 .LandingPageContainer {
   background-color: var(--primary-bg);
-  border: 1px solid red;
+  height: 100vh;
 }
 
 .WelcomeMessageContainer h2 {

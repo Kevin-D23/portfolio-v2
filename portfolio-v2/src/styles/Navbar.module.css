@@ -1,0 +1,28 @@
+.NavbarContainer {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(90deg);
+  top: 50%;
+  right: -8rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.NavbarButtons {
+  display: flex;
+  list-style-type: none;
+  gap: 3rem;
+  color: var(--primary-text);
+}
+
+.NavbarButtons a:visited, .NavbarButtons
+a:active, .NavbarButtons a {
+  color: var(--primary-text);
+}
+
+.NavbarContainer a {
+  text-decoration: none;
+}
+
