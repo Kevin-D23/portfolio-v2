@@ -1,6 +1,10 @@
 import styles from "../styles/Navbar.module.css";
 
 export default function Navbar() {
+
+  const target = document.getElementById('test');
+  
+  
   return (
     <nav className={styles.NavbarContainer}>
       <ul className={styles.NavbarButtons}>

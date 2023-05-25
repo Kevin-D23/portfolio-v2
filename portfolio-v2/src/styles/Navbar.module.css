@@ -26,3 +26,8 @@ a:active, .NavbarButtons a {
   text-decoration: none;
 }
 
+.NavbarButtons .active {
+    text-decoration: underline;
+    text-decoration-color: var(--accent-color);
+}
+

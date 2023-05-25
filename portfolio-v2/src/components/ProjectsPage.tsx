@@ -48,7 +48,7 @@ export default function ProjectsPage() {
   ];
 
   return (
-    <section className={styles.ProjectsPageContainer}>
+    <section id='projects' className={styles.ProjectsPageContainer}>
       <h1>PROJECTS</h1>
       <hr />
       <ul className={styles.ProjectsContainer}>
