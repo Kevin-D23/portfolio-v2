@@ -75,6 +75,7 @@
 
 .TypewriterTextContainer li span {
   position: relative;
+  font-weight: 600;
 }
 
 .TypewriterTextContainer li .first::after {
