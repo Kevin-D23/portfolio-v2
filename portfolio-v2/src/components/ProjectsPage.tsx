@@ -45,26 +45,34 @@ export default function ProjectsPage() {
       gitURL: "https://github.com/Kevin-D23/Cool-Peeper-DSbot",
       websiteURL: "",
     },
+    {
+      imgURL: "",
+      title: "Discord Bot",
+      technologies: ["Javascript", "NodeJS", "MongoDB", "Heroku"],
+      description:
+        "This discord bot is loaded with functions by request from the users of a server I’m a part of. Some of its capabilities include playing music, birthday reminders, and gambling.",
+      gitURL: "https://github.com/Kevin-D23/Cool-Peeper-DSbot",
+      websiteURL: "",
+    },
   ];
 
   return (
     <section id='projects' className={styles.ProjectsPageContainer}>
       <h1>PROJECTS</h1>
-      <hr />
       <ul className={styles.ProjectsContainer}>
         {projects.map((project, index) => {
           return (
             <li key={index} className={styles.Project}>
               <img src={project.imgURL} alt="" />
-              <h1>{project.title}</h1>
-              <h2>
+              <h2>{project.title}</h2>
+              <h3>
                 Technologies:{" "}
                 <span>
                   {project.technologies.map((technology, index) => {
                     return technology + " ";
                   })}
                 </span>
-              </h2>
+              </h3>
               <p>{project.description}</p>
               {project.websiteURL && <a href={project.websiteURL}></a>}
               <a href={project.gitURL}></a>

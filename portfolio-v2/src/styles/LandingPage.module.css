@@ -171,4 +171,7 @@
   .WelcomeMessageContainer {
     top: 0;
   }
+  .WelcomeMessageContainer h1 {
+    font-size: 4rem;
+  }
 }

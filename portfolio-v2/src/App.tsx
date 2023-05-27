@@ -13,7 +13,9 @@ function App() {
       <Navbar />
       <SocialsBar />
       <LandingPage />
-      
+      <ProjectsPage />
+      <AboutPage />
+      <ContactPage />
       <Footer />
     </div>
   );
