@@ -42,3 +42,9 @@ a:active, .NavbarButtons a {
     
 }
 
+@media (max-width: 950px) {
+  .NavbarContainer{
+    display: none;
+  }
+}
+

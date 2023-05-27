@@ -24,3 +24,9 @@
 .SocialIcons a {
   transform: rotate(90deg);
 }
+
+@media (max-width: 950px) {
+    .SocialsBarContainer{
+      display: none;
+    }
+}

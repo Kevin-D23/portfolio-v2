@@ -11,6 +11,7 @@
   top: 21rem;
   left: 23.5rem;
   width: 41rem;
+  height: 26rem;
 }
 
 .WelcomeMessageContainer h2 {
@@ -56,6 +57,12 @@
 .TypewriterTextContainer {
   display: flex;
   margin-bottom: 3.75rem;
+  margin-left: 1rem;
+}
+
+.TypewriterTextContainer img {
+  width: 2.5rem;
+  height: 3rem;
 }
 
 .TypewriterTextContainer ul li {
@@ -71,6 +78,7 @@
   overflow: hidden;
   height: 2.625rem;
   line-height: 3rem;
+  margin-left: 1rem;
 }
 
 .TypewriterTextContainer li span {
@@ -123,11 +131,12 @@
   50% {
     left: 100%;
   }
-  51%, 65% {
+  51%,
+  60% {
     left: 100%;
   }
   100% {
-    left: 0
+    left: 0;
   }
 }
 
@@ -137,3 +146,27 @@
   }
 }
 
+@media (max-width: 1180px) {
+  .WelcomeMessageContainer {
+    left: 12rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .LandingPageContainer {
+    display: flex;
+    justify-content: center;
+  }
+  .WelcomeMessageContainer {
+    left: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .LandingPageContainer {
+    align-items: center;
+  }
+  .WelcomeMessageContainer {
+    top: 0;
+  }
+}
