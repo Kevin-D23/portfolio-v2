@@ -21,7 +21,7 @@ export default function AboutPage() {
   ];
 
   return (
-    <section className={styles.AboutPageContainer}>
+    <section id="about" className={styles.AboutPageContainer}>
       <div className={styles.ImageContainer}>
         <img src={image1} alt="" />
         <img src={image2} alt="" />
@@ -48,13 +48,21 @@ export default function AboutPage() {
         <h1>Languages</h1>
         <ul className={styles.LanguagesContainer}>
           {languages.map((language, index) => {
-            return <li key={index} className={styles.Language}>{language}</li>
+            return (
+              <li key={index} className={styles.Language}>
+                {language}
+              </li>
+            );
           })}
         </ul>
         <h1>Tools</h1>
         <ul className={styles.ToolsContainer}>
           {tools.map((tool, index) => {
-            return <li key={index} className={styles.Tool}>{tool}</li>
+            return (
+              <li key={index} className={styles.Tool}>
+                {tool}
+              </li>
+            );
           })}
         </ul>
       </div>

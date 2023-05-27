@@ -1,3 +1,4 @@
 .ContactPageContainer {
-    background-color: var(--primary-bg);
+    background-color: var(--secondary-bg);
+    height: 72rem;
 }

@@ -23,11 +23,22 @@ a:active, .NavbarButtons a {
 }
 
 .NavbarContainer a {
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: all .5s ease;
+  text-decoration-thickness: 3px;
+  text-underline-offset: .5rem;
 }
 
-.NavbarButtons .active {
+.NavbarButtons a:hover {
+  color: var(--accent-color)
+}
+
+.NavbarButtons .Active {
     text-decoration: underline;
     text-decoration-color: var(--accent-color);
+    text-decoration-thickness: 3px;
+    text-underline-offset: .5rem;
+    
 }
 

@@ -25,7 +25,7 @@ export default function ContactPage() {
       );
   };
   return (
-    <section className={styles.ContactPageContainer}>
+    <section id="contact" className={styles.ContactPageContainer}>
       <form onSubmit={sendEmail}>
         <label>Name</label>
         <input type="text" name="name" required={true}></input>
