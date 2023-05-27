@@ -3,22 +3,136 @@
   height: 100vh;
 }
 
+.WelcomeMessageContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  top: 21rem;
+  left: 23.5rem;
+  width: 41rem;
+}
+
 .WelcomeMessageContainer h2 {
   color: var(--accent-color);
+  font-size: 2rem;
 }
 
 .WelcomeMessageContainer h1 {
   color: var(--primary-text);
+  font-size: 6rem;
+}
+
+.WelcomeMessageContainer ul {
+  color: var(--secondary-text);
+  font-size: 2rem;
 }
 
 .WelcomeMessageContainer h3 {
   color: var(--secondary-text);
+  font-size: 1rem;
+  width: 30.25rem;
+  text-align: left;
+  margin-bottom: 2rem;
 }
 
-.WelcomeMessageContainer ul {
-    color: var(--secondary-text);
-}
-
-.WelcomeMessageContainer span {
+.WelcomeMessageContainer h3 span {
   color: var(--accent-color);
 }
+
+.WelcomeMessageContainer a {
+  color: var(--secondary-text);
+  font-size: 0.688rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 2.25rem;
+  border: 0.125rem var(--secondary-text) solid;
+  border-radius: 0.125rem;
+  text-decoration: none;
+}
+
+.TypewriterTextContainer {
+  display: flex;
+  margin-bottom: 3.75rem;
+}
+
+.TypewriterTextContainer ul li {
+  position: relative;
+  top: 0;
+  animation: slide 10s steps(4) infinite;
+}
+
+.TypewriterTextContainer ul {
+  text-align: left;
+  list-style: none;
+  position: relative;
+  overflow: hidden;
+  height: 2.625rem;
+  line-height: 3rem;
+}
+
+.TypewriterTextContainer li span {
+  position: relative;
+}
+
+.TypewriterTextContainer li .first::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  background-color: var(--primary-bg);
+  height: 100%;
+  width: 100%;
+  border-left: 0.125rem var(--accent-color) solid;
+  animation: typing 2.5s steps(17) infinite;
+}
+.TypewriterTextContainer li .second::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  background-color: var(--primary-bg);
+  height: 100%;
+  width: 100%;
+  border-left: 0.125rem var(--accent-color) solid;
+  animation: typing 2.5s steps(13) infinite;
+}
+.TypewriterTextContainer li .third::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  background-color: var(--primary-bg);
+  height: 100%;
+  width: 100%;
+  border-left: 0.125rem var(--accent-color) solid;
+  animation: typing 2.5s steps(9) infinite;
+}
+.TypewriterTextContainer li .fourth::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  background-color: var(--primary-bg);
+  height: 100%;
+  width: 100%;
+  border-left: 0.125rem var(--accent-color) solid;
+  animation: typing 2.5s steps(7) infinite;
+}
+
+@keyframes typing {
+  50% {
+    left: 100%;
+  }
+  51%, 65% {
+    left: 100%;
+  }
+  100% {
+    left: 0
+  }
+}
+
+@keyframes slide {
+  100% {
+    top: -12rem;
+  }
+}
+

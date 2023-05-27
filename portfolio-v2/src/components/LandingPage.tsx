@@ -1,17 +1,19 @@
 import styles from "../styles/LandingPage.module.css";
+import arrow from "../icons/arrow.svg";
 
 export default function LandingPage() {
   return (
-    <section className={styles.LandingPageContainer}>
-      <div id="home" className={styles.WelcomeMessageContainer}>
+    <section id="home" className={styles.LandingPageContainer}>
+      <div className={styles.WelcomeMessageContainer}>
         <h2>hello, my name is</h2>
         <h1>Kevin Duong</h1>
-        <div className={styles.TypewriterTextContanier}>
+        <div className={styles.TypewriterTextContainer}>
+          <img src={arrow} />
           <ul>
-            <li>Software Engineer</li>
-            <li>Web Developer</li>
-            <li>Innovator</li>
-            <li>Creator</li>
+            <li><span className={styles.first}>Software Engineer</span></li>
+            <li><span className={styles.second}>Web Developer</span></li>
+            <li><span className={styles.third}>Innovator</span></li>
+            <li><span className={styles.fourth}>Creator</span></li>
           </ul>
         </div>
         <h3>
