@@ -149,6 +149,7 @@
 @media (max-width: 1180px) {
   .WelcomeMessageContainer {
     left: 12rem;
+    top: 15rem;
   }
 }
 
@@ -159,6 +160,7 @@
   }
   .WelcomeMessageContainer {
     left: 0;
+    top: 10rem;
   }
 }
 
