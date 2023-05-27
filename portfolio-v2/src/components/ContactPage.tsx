@@ -1,12 +1,14 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import styles from "../styles/ContactPage.module.css";
 
 export default function ContactPage() {
   const form = useRef();
+  const [emailSent, setEmailSent] = useState(false)
 
   const sendEmail = (e:any) => {
     e.preventDefault();
+    setEmailSent(true)
 
     emailjs
       .sendForm(
@@ -26,7 +28,7 @@ export default function ContactPage() {
   };
   return (
     <section id="contact" className={styles.ContactPageContainer}>
-      <form onSubmit={sendEmail}>
+      {!emailSent && <form onSubmit={sendEmail}>
         <label>Name</label>
         <input type="text" name="name" required={true}></input>
         <label>Email</label>
@@ -34,7 +36,8 @@ export default function ContactPage() {
         <label>Message</label>
         <textarea name="message"></textarea>
         <input type="submit" value={"Send"} />
-      </form>
+      </form>}
+      {emailSent && <div className={styles.SentMesssageContainer}></div>}
     </section>
   );
 }
