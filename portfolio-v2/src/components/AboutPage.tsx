@@ -29,11 +29,11 @@ export default function AboutPage() {
           <img src={image2} alt="" />
           <img src={image3} alt="" />
         </div>
-        <div className={styles.ContentContainer}>
-          <h1>Get to know me!</h1>
+        <div className={styles.AboutMeContainer}>
+          <h2>Get to know me!</h2>
           <p>
-            My name is Kevin and I am a front-end software engineer with a
-            passion for building websites and web applications. I am currently a
+            My name is Kevin and I am a <span>front-end</span> software engineer with a
+            passion for building <span>websites</span> and <span>web applications</span>. I am currently a
             junior at UCLA and majoring in computer science.
           </p>
           <p>
@@ -48,7 +48,7 @@ export default function AboutPage() {
           <a href="">RESUME</a>
         </div>
         <div className={styles.SkillsContainer}>
-          <h1>Languages</h1>
+          <h2>Languages</h2>
           <ul className={styles.LanguagesContainer}>
             {languages.map((language, index) => {
               return (
@@ -58,7 +58,7 @@ export default function AboutPage() {
               );
             })}
           </ul>
-          <h1>Tools</h1>
+          <h2>Tools</h2>
           <ul className={styles.ToolsContainer}>
             {tools.map((tool, index) => {
               return (
