@@ -1,6 +1,6 @@
 import styles from "../styles/ProjectsPage.module.css";
-import discordProject from '../images/discordProject.png'
-import desingThrivingProject from '../images/designThrivingProject.png'
+import discordProject from "../images/discordProject.png";
+import desingThrivingProject from "../images/designThrivingProject.png";
 
 type project = {
   imgURL: string;
@@ -35,8 +35,8 @@ export default function ProjectsPage() {
       ],
       description:
         "This project began as a challenge hosted by Riot Games and IDEO. Our goal was to design and develop a platform to welcome underrepresented communities in the gaming space.",
-      gitURL: "",
-      websiteURL: "",
+      gitURL: "https://github.com/designthriving/designthriving",
+      websiteURL: "https://www.figma.com/file/RZmiZ8ITJ0RqsewuGxnRkR/Project%3A-Design-for-Digital-Thriving?type=design&node-id=3-10&t=6T1RJXclTz3lArsj-0",
     },
     {
       imgURL: `${discordProject}`,
@@ -58,26 +58,43 @@ export default function ProjectsPage() {
     },
   ];
 
+  function hide() {
+    var reveals = document.querySelectorAll(".hide-right, .hide-left");
+
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var messageMargin = windowHeight * 0.15;
+
+      if (elementTop < messageMargin) reveals[i].classList.add("active");
+      else reveals[i].classList.remove("active");
+    }
+  }
+
   return (
-    <section id='projects' className={styles.ProjectsPageContainer}>
+    <section id="projects" className={styles.ProjectsPageContainer}>
       <h1>PROJECTS</h1>
       <ul className={styles.ProjectsContainer}>
         {projects.map((project, index) => {
           return (
             <li key={index} className={styles.Project}>
               <img src={project.imgURL} alt="" />
-              <h2>{project.title}</h2>
-              <h3>
-                Technologies:{" "}
-                <span>
-                  {project.technologies.map((technology, index) => {
-                    return technology + " ";
-                  })}
-                </span>
-              </h3>
-              <p>{project.description}</p>
-              {project.websiteURL && <a href={project.websiteURL}>Demo</a>}
-              <a href={project.gitURL}>Code</a>
+              <div className={styles.ProjectContent}>
+                <h2>{project.title}</h2>
+                <h3>
+                  Technologies:{" "}
+                  <span>
+                    {project.technologies.map((technology, index) => {
+                      return technology + " ";
+                    })}
+                  </span>
+                </h3>
+                <p>{project.description}</p>
+                <div className={styles.ProjectButtons}>
+                  {project.websiteURL && <a href={project.websiteURL} target="_blank" className={styles.DemoBtn}>Demo</a>}
+                  <a href={project.gitURL} target="_blank" className={styles.CodeBtn}>Code</a>
+                </div>
+              </div>
             </li>
           );
         })}

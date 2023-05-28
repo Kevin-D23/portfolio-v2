@@ -33,35 +33,82 @@
 }
 
 .Project {
-    border-radius: 0.313rem;
+  border-radius: 0.313rem;
 }
 
 .Project img {
-    height: 17rem;
-    width: 26.25rem;
-    border-radius: 0.313rem 0.313rem 0 0;
+  height: 17rem;
+  width: 26.25rem;
+  border-radius: 0.313rem 0.313rem 0 0;
 }
 
 .Project h2 {
   color: var(--accent-color);
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.688rem;
 }
 
 .Project h3 {
   color: var(--secondary-text);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.125rem;
 }
 
 .Project p {
   color: var(--primary-text);
+  margin-bottom: 2.25rem;
+}
+
+.Project h3 span {
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 .Project {
   width: 26.25rem;
   height: 40.625rem;
   background-color: var(--primary-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ProjectContent {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 21.125rem;
+  margin-top: 1.25rem;
+}
+
+.ProjectButtons {
+  align-self: flex-end;
+  display: flex;
+  gap: 1rem;
+}
+
+.ProjectButtons a {
+  color: var(--primary-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  width: 4.75rem;
+  height: 2.75rem;
+  font-size: 1.25rem;
+  text-decoration: none;
+  background-color: var(--accent-color);
+}
+
+.DemoBtn {
+  background-color: var(--secondary-bg) !important;
+  color: var(--primary-text) !important;
 }
 
 @media (max-width: 1780px) {
-    .ProjectsContainer {
-        justify-content: center;
-    }
+  .ProjectsContainer {
+    justify-content: center;
+  }
 }
