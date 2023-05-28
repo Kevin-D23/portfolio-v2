@@ -170,6 +170,11 @@
   }
   .WelcomeMessageContainer {
     top: 0;
+    left: 1rem;
+    width: 28rem;
+  }
+  .WelcomeMessageContainer h3 {
+    width: 28rem;
   }
   .WelcomeMessageContainer h1 {
     font-size: 4rem;
