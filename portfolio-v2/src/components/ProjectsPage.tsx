@@ -36,7 +36,8 @@ export default function ProjectsPage() {
       description:
         "This project began as a challenge hosted by Riot Games and IDEO. Our goal was to design and develop a platform to welcome underrepresented communities in the gaming space.",
       gitURL: "https://github.com/designthriving/designthriving",
-      websiteURL: "https://www.figma.com/file/RZmiZ8ITJ0RqsewuGxnRkR/Project%3A-Design-for-Digital-Thriving?type=design&node-id=3-10&t=6T1RJXclTz3lArsj-0",
+      websiteURL:
+        "https://www.figma.com/file/RZmiZ8ITJ0RqsewuGxnRkR/Project%3A-Design-for-Digital-Thriving?type=design&node-id=3-10&t=6T1RJXclTz3lArsj-0",
     },
     {
       imgURL: `${discordProject}`,
@@ -58,18 +59,20 @@ export default function ProjectsPage() {
     },
   ];
 
-  function hide() {
-    var reveals = document.querySelectorAll(".hide-right, .hide-left");
+  function reveal() {
+    var reveals = document.querySelectorAll(`.${styles.Reveal}`);
 
     for (var i = 0; i < reveals.length; i++) {
       var windowHeight = window.innerHeight;
       var elementTop = reveals[i].getBoundingClientRect().top;
-      var messageMargin = windowHeight * 0.15;
+      var elementVisible = windowHeight * 0.1;
 
-      if (elementTop < messageMargin) reveals[i].classList.add("active");
-      else reveals[i].classList.remove("active");
+      if (elementTop < windowHeight - elementVisible)
+        reveals[i].classList.add(`${styles.Active}`);
     }
   }
+
+  window.addEventListener("scroll", reveal);
 
   return (
     <section id="projects" className={styles.ProjectsPageContainer}>
@@ -77,7 +80,13 @@ export default function ProjectsPage() {
       <ul className={styles.ProjectsContainer}>
         {projects.map((project, index) => {
           return (
-            <li key={index} className={styles.Project}>
+            <li
+              key={index}
+              className={`${styles.Project} ${styles.Reveal}`}
+              style={{
+                transition: "all " + 0.5 + "s ease " + index * 0.1 + "s",
+              }}
+            >
               <img src={project.imgURL} alt="" />
               <div className={styles.ProjectContent}>
                 <h2>{project.title}</h2>
@@ -91,8 +100,22 @@ export default function ProjectsPage() {
                 </h3>
                 <p>{project.description}</p>
                 <div className={styles.ProjectButtons}>
-                  {project.websiteURL && <a href={project.websiteURL} target="_blank" className={styles.DemoBtn}>Demo</a>}
-                  <a href={project.gitURL} target="_blank" className={styles.CodeBtn}>Code</a>
+                  {project.websiteURL && (
+                    <a
+                      href={project.websiteURL}
+                      target="_blank"
+                      className={styles.DemoBtn}
+                    >
+                      Demo
+                    </a>
+                  )}
+                  <a
+                    href={project.gitURL}
+                    target="_blank"
+                    className={styles.CodeBtn}
+                  >
+                    Code
+                  </a>
                 </div>
               </div>
             </li>

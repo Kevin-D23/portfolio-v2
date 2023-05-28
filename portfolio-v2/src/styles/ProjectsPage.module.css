@@ -102,6 +102,18 @@
   background-color: var(--accent-color);
 }
 
+.Reveal {
+  position: relative;
+  transform: translateY(10vh);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.ProjectsContainer .Active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
 .DemoBtn {
   background-color: var(--secondary-bg) !important;
   color: var(--primary-text) !important;
