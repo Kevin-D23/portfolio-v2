@@ -1,4 +1,6 @@
 import styles from "../styles/ProjectsPage.module.css";
+import discordProject from '../images/discordProject.png'
+import desingThrivingProject from '../images/designThrivingProject.png'
 
 type project = {
   imgURL: string;
@@ -12,7 +14,7 @@ type project = {
 export default function ProjectsPage() {
   const projects: project[] = [
     {
-      imgURL: "",
+      imgURL: `${discordProject}`,
       title: "Discord Bot",
       technologies: ["Javascript", "NodeJS", "MongoDB", "Heroku"],
       description:
@@ -21,7 +23,7 @@ export default function ProjectsPage() {
       websiteURL: "",
     },
     {
-      imgURL: "",
+      imgURL: `${desingThrivingProject}`,
       title: "Digital Thriving",
       technologies: [
         "HTML",
@@ -37,7 +39,7 @@ export default function ProjectsPage() {
       websiteURL: "",
     },
     {
-      imgURL: "",
+      imgURL: `${discordProject}`,
       title: "Discord Bot",
       technologies: ["Javascript", "NodeJS", "MongoDB", "Heroku"],
       description:
@@ -46,7 +48,7 @@ export default function ProjectsPage() {
       websiteURL: "",
     },
     {
-      imgURL: "",
+      imgURL: `${desingThrivingProject}`,
       title: "Discord Bot",
       technologies: ["Javascript", "NodeJS", "MongoDB", "Heroku"],
       description:
@@ -74,8 +76,8 @@ export default function ProjectsPage() {
                 </span>
               </h3>
               <p>{project.description}</p>
-              {project.websiteURL && <a href={project.websiteURL}></a>}
-              <a href={project.gitURL}></a>
+              {project.websiteURL && <a href={project.websiteURL}>Demo</a>}
+              <a href={project.gitURL}>Code</a>
             </li>
           );
         })}

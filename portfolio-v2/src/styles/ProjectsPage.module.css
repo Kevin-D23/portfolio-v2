@@ -32,6 +32,16 @@
   flex-wrap: wrap;
 }
 
+.Project {
+    border-radius: 0.313rem;
+}
+
+.Project img {
+    height: 17rem;
+    width: 26.25rem;
+    border-radius: 0.313rem 0.313rem 0 0;
+}
+
 .Project h2 {
   color: var(--accent-color);
 }

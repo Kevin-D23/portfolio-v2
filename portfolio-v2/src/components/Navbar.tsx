@@ -24,8 +24,6 @@ export default function Navbar() {
 
   function checkCurrentSection() {
     const position = window.scrollY;
-    console.log(position);
-    console.log(sectionPositions);
     if (
       sectionPositions[0] !== undefined &&
       sectionPositions[1] !== undefined &&
