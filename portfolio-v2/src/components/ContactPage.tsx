@@ -38,7 +38,7 @@ export default function ContactPage() {
         <textarea name="message"></textarea>
         <input type="submit" value={"Send"} className={styles.Submit}/>
       </form>}
-      {emailSent && <div className={styles.SentMesssageContainer}></div>}
+      {emailSent && <div className={styles.SentMessageContainer}>Your message has been sent! I will try to get back to you within 48 hours. Thank you!</div>}
     </section>
   );
 }

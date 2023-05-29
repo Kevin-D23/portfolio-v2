@@ -1,4 +1,42 @@
 .FooterContainer {
-    background-color: var(--primary-bg);
+    background-color: var(--secondary-bg);
     height: 10.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end
+}
+
+.FooterContainer hr {
+    width: 45rem;
+}
+
+.FooterContainer h1 {
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: var(--primary-text);
+    margin-bottom: 1.25rem;
+    margin-top: 2rem;
+}
+
+.FooterContainer h2 {
+    font-weight: 300;
+    color: var(--primary-text);
+    font-size: 1rem;
+    position: relative;
+    justify-self: end;
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+.SocialIcons {
+    display: flex;
+    width: 10.25rem;
+    justify-content: space-around;
+}
+
+@media (max-width:705px) {
+    .FooterContainer hr {
+        width: 28rem;
+    }
 }

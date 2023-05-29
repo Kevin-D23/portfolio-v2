@@ -72,6 +72,13 @@
     margin-top: 3.5rem;
 }
 
+.SentMessageContainer {
+    color: var(--primary-text);
+    font-size: 1rem;
+    font-weight: 600;
+    
+}
+
 @media (max-width: 730px) {
     .ContactPageContainer form {
         width: 40rem;
