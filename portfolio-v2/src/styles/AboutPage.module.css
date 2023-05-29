@@ -1,9 +1,10 @@
 .AboutPageContainer {
   background-color: var(--primary-bg);
-  height: 48rem;
+  padding-bottom: 8.5rem;
   display: flex;
   align-items: center;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .AboutPageContainer h1 {
@@ -26,11 +27,13 @@
 
 .ContentContainer {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .ContentContainer h2 {
   margin-bottom: 2.375rem;
-  margin-top: 0.25rem;
+  margin-top: 0.75rem;
   color: var(--accent-color);
 }
 
@@ -42,28 +45,36 @@
   gap: 0.5rem;
 }
 
-.AboutMeContainer {
-  width: 34rem;
-  text-align: left;
-  padding-left: 2rem;
-  border-left: 0.188rem solid var(--primary-text);
-  margin-left: 4rem;
-  margin-right: 3rem;
+.ImageContainer img:nth-child(1) {
+  width: 100%;
 }
 
-.AboutMeContainer p {
+.ImageContainer img:nth-child(2) {
+  width: 49%;
+}
+
+.ImageContainer img:nth-child(3) {
+  width: 49%;
+}
+
+.ParagraphsContainer {
+  width: 32rem;
+  text-align: left;
+}
+
+.ParagraphsContainer p {
   font-size: 1.125rem;
   color: var(--primary-text);
   font-weight: 400;
   margin-bottom: 3rem;
 }
 
-.AboutMeContainer span {
+.ParagraphsContainer span {
   color: var(--secondary-text);
   font-weight: 600;
 }
 
-.AboutMeContainer a {
+.ParagraphsContainer a {
   color: var(--accent-color);
   text-decoration: none;
   display: flex;
@@ -99,4 +110,39 @@
 
 .LanguagesContainer {
   margin-bottom: 2.375rem;
+}
+
+.AboutMeContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-left: 0.188rem solid var(--primary-text);
+  gap: 2rem;
+  margin-left: 3rem;
+  padding-left: 2rem;
+}
+
+@media (max-width: 1508px) {
+  .ParagraphsContainer {
+    border: none;
+  }
+}
+
+@media (max-width: 1040px) {
+    .SkillsContainer {
+        width: 32rem;
+    }
+    .AboutMeContainer {
+        display: inline;
+    }
+}
+
+@media (max-width: 380px) {
+    .ParagraphsContainer, .SkillsContainer {
+        width: 26rem;
+    }
+    .AboutMeContainer {
+        width: 29rem;
+        margin-left: 0;
+    }
 }

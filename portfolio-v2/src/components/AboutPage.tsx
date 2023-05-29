@@ -30,6 +30,7 @@ export default function AboutPage() {
           <img src={image3} alt="" />
         </div>
         <div className={styles.AboutMeContainer}>
+        <div className={styles.ParagraphsContainer}>
           <h2>Get to know me!</h2>
           <p>
             My name is Kevin and I am a <span>front-end</span> software engineer with a
@@ -68,6 +69,7 @@ export default function AboutPage() {
               );
             })}
           </ul>
+        </div>
         </div>
       </div>
     </section>
