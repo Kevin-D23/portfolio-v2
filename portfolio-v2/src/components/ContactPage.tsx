@@ -28,6 +28,7 @@ export default function ContactPage() {
   };
   return (
     <section id="contact" className={styles.ContactPageContainer}>
+      <h1>Contact</h1>
       {!emailSent && <form onSubmit={sendEmail}>
         <label>Name</label>
         <input type="text" name="name" required={true}></input>
@@ -35,7 +36,7 @@ export default function ContactPage() {
         <input type="email" name="email" required={true}></input>
         <label>Message</label>
         <textarea name="message"></textarea>
-        <input type="submit" value={"Send"} />
+        <input type="submit" value={"Send"} className={styles.Submit}/>
       </form>}
       {emailSent && <div className={styles.SentMesssageContainer}></div>}
     </section>
