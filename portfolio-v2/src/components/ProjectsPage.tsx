@@ -39,24 +39,6 @@ export default function ProjectsPage() {
       websiteURL:
         "https://www.figma.com/file/RZmiZ8ITJ0RqsewuGxnRkR/Project%3A-Design-for-Digital-Thriving?type=design&node-id=3-10&t=6T1RJXclTz3lArsj-0",
     },
-    {
-      imgURL: `${discordProject}`,
-      title: "Discord Bot",
-      technologies: ["Javascript", "NodeJS", "MongoDB", "Heroku"],
-      description:
-        "This discord bot is loaded with functions by request from the users of a server I’m a part of. Some of its capabilities include playing music, birthday reminders, and gambling.",
-      gitURL: "https://github.com/Kevin-D23/Cool-Peeper-DSbot",
-      websiteURL: "",
-    },
-    {
-      imgURL: `${desingThrivingProject}`,
-      title: "Discord Bot",
-      technologies: ["Javascript", "NodeJS", "MongoDB", "Heroku"],
-      description:
-        "This discord bot is loaded with functions by request from the users of a server I’m a part of. Some of its capabilities include playing music, birthday reminders, and gambling.",
-      gitURL: "https://github.com/Kevin-D23/Cool-Peeper-DSbot",
-      websiteURL: "",
-    },
   ];
 
   function reveal() {
