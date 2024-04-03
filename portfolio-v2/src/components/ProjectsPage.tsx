@@ -39,6 +39,15 @@ export default function ProjectsPage() {
       websiteURL:
         "https://www.figma.com/file/RZmiZ8ITJ0RqsewuGxnRkR/Project%3A-Design-for-Digital-Thriving?type=design&node-id=3-10&t=6T1RJXclTz3lArsj-0",
     },
+    {
+      imgURL: `${desingThrivingProject}`,
+      title: "Students Inferno",
+      technologies: ["HTML", "CSS", "Javascript", "MongoDB", "React", "NextJS"],
+      description:
+        "Study companion app designed to help students find others to form study groups with. This platform combines the convenience of a dating app with the purpose of finding like-minded individuals.",
+      gitURL: "https://github.com/Kevin-D23/CS35L-GP",
+      websiteURL: "",
+    },
   ];
 
   function reveal() {
